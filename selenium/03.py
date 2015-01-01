@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import pdb
 
 driver = webdriver.Firefox()
 driver.get("http://pythonforengineers.com/articles/")
@@ -11,3 +12,7 @@ elem.send_keys(Keys.RETURN)
 time.sleep(0.1)
 link = driver.find_element_by_link_text("Build a Reddit Bot Part 1")
 link.click()
+
+
+
+#driver.close()
